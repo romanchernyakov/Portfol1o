@@ -1,0 +1,174 @@
+* {
+	padding: 0;
+	margin: 0;
+	}
+body {
+    background-color: rgb(2, 18, 4);
+}
+
+.outWrapper {
+    width: 100vh;
+    height: 100vw;
+    top: 100vh;
+    transform: rotate(-90deg);
+    transform-origin: top left;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+    width: 400vw;
+}
+
+.wrapper.bg img{
+
+    height: 100px;
+}
+
+.bg img{
+    position: absolute;
+    height: 100vh;
+}
+
+.bg1 img{
+    position: absolute;
+    height: 100vh;
+    left: 177.7vh;
+}
+.bg2 img{
+    position: absolute;
+    height: 100%;
+    left: 354.5vh;
+}
+
+.ExitButtonOn {
+    position: absolute;
+    height: 14.4vh;
+    top: 1.9vh;
+    left: 278.9vh;
+    z-index: 3;
+    opacity: 10%;
+    transition: 0.2s;
+}
+    .ExitButtonOn:hover {
+        position: absolute;
+        height: 14.4vh;
+        top: 1.9vh;
+        left: 278.9vh;
+        z-index: 3;
+        opacity: 100%;
+    }
+.exitDoor {
+    position: absolute;
+    height: 100vh;
+    top: 0px;
+    left: 326.9vh;
+    z-index: 4;
+    opacity: 10%;
+    transition: 0.2s;
+}
+    .exitDoor:hover {
+        position: absolute;
+        height: 100vh;
+        top: 0px;
+        left: 326.9vh;
+        z-index: 4;
+        opacity: 100%;
+    }
+    
+
+.cvBox {
+    position: absolute;
+    top: 25vh;
+    left: 50vh;
+    width: 69vh;
+    height: 46vh; 
+    opacity: 1;
+    transition: 0.2s;
+}
+    .cvBox:hover {
+        position: absolute;
+        top: 25vh;
+        left: 50vh;
+        width: 69vh;
+        height: 46vh; 
+        opacity: 0;
+    }
+.cvLink{
+    position: absolute;
+    bottom: -9.7vh;
+    left: -2vh;
+    height: 59.1vh;
+}
+
+.gradient {
+    position: absolute;
+    top: 81vh;
+    left: 184vh;
+    height: 11vh;
+    width: 59vh;
+}
+
+.preloader {
+/*фиксированное позиционирование*/
+position: fixed;
+/* координаты положения */
+left: 0;
+top: 0;
+right: 0;
+bottom: 0;
+/* фоновый цвет элемента */
+background: #4f89b5;
+/* размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице) */
+z-index: 1001;
+}
+
+.preloader__row {
+position: relative;
+top: 50%;
+left: 50%;
+width: 70px;
+height: 70px;
+margin-top: -35px;
+margin-left: -35px;
+text-align: center;
+animation: preloader-rotate 2s infinite linear;
+}
+
+.loading {
+    left: 50vw;
+    top: 50vh;
+    margin-left: -50%; ;
+    font-size: 3vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation: preloader-bounce 3s infinite ease-in;
+    opacity: 0;
+}
+
+@keyframes preloader-bounce {
+
+0%{
+    opacity: 0;
+}
+
+50%{
+    opacity: 1;
+}
+}
+
+.loaded_hiding .preloader {
+transition-delay: 1s;
+transition: 0.3s opacity;
+opacity: 0;
+}
+
+.loaded .preloader {
+transition-delay: 2s;
+display: none;
+}
+

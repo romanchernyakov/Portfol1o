@@ -1,0 +1,173 @@
+.body{
+    transition: transform 0.2s;
+}
+.outWrapper {
+    width: 100vh;
+    height: 100vw;
+    top: 100vh;
+    transform: rotate(-90deg);
+    transform-origin: top left;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+    width: 218vw;
+}
+
+.gradient {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+}
+
+.gradientOn {
+    position: absolute;
+    top: 4vh;
+    left: 26.6vh;
+    height: 96vh;
+    z-index: 10;
+}
+.gradientOn img{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 91.1vh;
+    opacity: 0;
+    transition: 0.2s;
+}
+    .gradientOn img:hover{
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        height: 91.1vh;
+        opacity: 1;
+    }
+.iris {
+    position: absolute;
+    top: 0px;
+    left: 213.4vh;
+    height: 100vh;
+}
+
+.forestOn {
+    position: absolute;
+    top: 4vh;
+    left: 247.2vh;
+    height: 96vh;
+    z-index: 10;
+}
+.forestOn img{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 77vh;
+    opacity: 0;
+    transition: 0.2s;
+}
+    .forestOn img:hover{
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        height: 77vh;
+        opacity: 1;
+    }
+
+.exitPublication {
+    position: absolute;
+    top: 0px;
+    left: 364.4vh;
+    height: 100vh;
+}
+
+
+.ExitButtonOn {
+    position: absolute;
+    height: 6.9vh;
+    top: 4vh;
+    left: 369.6vh;
+    z-index: 3;
+    opacity: 0%;
+    transition: 0.2s;
+}
+
+.ExitButtonOn img {
+    position: absolute;
+    height: 18.5vh;
+    top: 0vh;
+    left: 0px;
+
+}
+    .ExitButtonOn:hover {
+        position: absolute;
+        height: 6.9vh;
+        top: 4vh;
+        left: 369.6vh;
+        z-index: 3;
+        opacity: 50%;
+    }
+
+.preloader {
+    /*фиксированное позиционирование*/
+    position: fixed;
+    /* координаты положения */
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    /* фоновый цвет элемента */
+    background: #4f89b5;
+    /* размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице) */
+    z-index: 1001;
+    }
+    
+    .preloader__row {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 70px;
+    height: 70px;
+    margin-top: -35px;
+    margin-left: -35px;
+    text-align: center;
+    animation: preloader-rotate 2s infinite linear;
+    }
+
+    .loading {
+        left: 50vw;
+        top: 50vh;
+        margin-left: -50%; ;
+        font-size: 3vh;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        animation: preloader-bounce 3s infinite ease-in;
+        opacity: 0;
+    }
+
+    @keyframes preloader-bounce {
+
+    0%{
+        opacity: 0;
+    }
+    
+    50%{
+        opacity: 1;
+    }
+    }
+
+    .loaded_hiding .preloader {
+    transition-delay: 1s;
+    transition: 0.3s opacity;
+    opacity: 0;
+    }
+    
+    .loaded .preloader {
+    transition-delay: 2s;
+    display: none;
+    }
+

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="styles/Publications.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <div class="preloader">
+        <div class="preloader__row">
+          <p class="loading" >Loading...</p>
+          <div class="preloader__item"></div>
+          <div class="preloader__item"></div>
+        </div>
+    </div>
+    <div class="outWrapper">
+        <div class="wrapper">
+            <a class= "ExitButtonOn" href="Projects.html"><img  src="assets/Publications/pf-exit.jpg" alt=""></a>
+
+            <a class="gradientOn" href="gradient.html"><img src="Assets/Publications/pf1-on.png" alt=""></a>
+
+            <a class="forestOn" href="https://acrobat.adobe.com/link/review?uri=urn:aaid:scds:US:e835fa18-b0f5-4598-943c-5a3ee265b477"><img src="Assets/Publications/pf3-on.jpg" alt=""></a>
+
+
+            <img class="gradient" src="assets/Publications/gradient.jpg" alt="">
+            <img class="iris" src="assets/Publications/forest.jpg" alt="">
+            <img class="exitPublication" src="assets/Publications/exit publication.jpg" alt="">
+        </div>
+    </div>
+    <script>
+        window.onload = function () {
+          document.body.classList.add('loaded_hiding');
+          window.setTimeout(function () {
+            document.body.classList.add('loaded');
+            document.body.classList.remove('loaded_hiding');
+          }, 500);
+        }
+      </script>
+</body>
+</html>

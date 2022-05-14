@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="styles/AboutMe.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <div class="preloader">
+        <div class="preloader__row">
+          <p class="loading" >Loading...</p>
+          <div class="preloader__item"></div>
+          <div class="preloader__item"></div>
+        </div>
+    </div>
+    <div class="outWrapper">
+        <div class="wrapper">
+            <div class="bg">
+                <img src="assets/about me main1.jpg" alt="">
+            </div>
+            <div class="bg1">
+                <img src="assets/about me main2.jpg" alt="">
+            </div>
+
+            <a href="index.html"><img class= "ExitButtonOn" src="assets/about me exit on.jpg" alt=""></a>
+            <a href="index.html"><img class= "exitDoor" src="assets/about me door on.jpg" alt=""></a>
+
+            <a class="gradient" href="gradient.html"></a>
+
+            <a class="cvBox" href="cv.html">
+                <img class="cvLink" src="Assets/Off/pc-off.jpg" alt="">
+            </a>
+        </div>
+    </div>
+    <script>
+        window.onload = function () {
+          document.body.classList.add('loaded_hiding');
+          window.setTimeout(function () {
+            document.body.classList.add('loaded');
+            document.body.classList.remove('loaded_hiding');
+          }, 500);
+        }
+      </script>
+</body>
+</html>

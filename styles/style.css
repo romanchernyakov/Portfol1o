@@ -1,0 +1,127 @@
+* {
+	padding: 0;
+	margin: 0;
+	}
+body {
+    background-color: rgb(89, 135, 173);
+}
+.bg img{
+    position: absolute;
+    height: 100%;
+}
+.bg1 img{
+    position: absolute;
+    height: 100%;
+    left: 177.7vh;
+}
+.bg2 img{
+    position: absolute;
+    height: 100%;
+    left: 354.5vh;
+}
+.projects img{
+    position: absolute;
+    width: 61.6vh;
+    top: 40.63vh;
+    left: 97.7vh;
+    opacity:0%;
+    transition: 0.2s;
+}
+    .projects img:hover {
+        position: absolute;
+        width: 61.6vh;
+        top: 40.63vh;
+        left: 97.7vh;
+        opacity: 100%;
+    }
+
+.aboutMe img{
+    position: absolute;
+    width: 19.8vh;
+    top: 46.8vh;
+    left: 40.6vh;
+    opacity:0%;
+    transition: 0.2s;
+}
+    .aboutMe img:hover {
+        position: absolute;
+        width: 19.8vh;
+        top: 46.8vh;
+        left: 40.6vh;
+        opacity: 100%;
+    }
+.red img{
+    position: absolute;
+    width: 14.2vh;
+    top: 55.4vh;
+    left: 126vh;
+    opacity: 0%;
+    transition: 0.2s;
+}
+    .red img:hover {
+        position: absolute;
+        width: 14.2vh;
+        top: 55.4vh;
+        left: 126vh;
+        opacity: 100%;
+    }
+
+
+.preloader {
+    /*фиксированное позиционирование*/
+    position: fixed;
+    /* координаты положения */
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    /* фоновый цвет элемента */
+    background: #4f89b5;
+    /* размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице) */
+    z-index: 1001;
+    }
+    
+    .preloader__row {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 70px;
+    height: 70px;
+    margin-top: -35px;
+    margin-left: -35px;
+    text-align: center;
+    animation: preloader-rotate 2s infinite linear;
+    }
+
+    .loading {
+        left: 50vw;
+        top: 50vh;
+        margin-left: -50%; ;
+        font-size: 3vh;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        animation: preloader-bounce 3s infinite ease-in;
+        opacity: 0;
+    }
+
+    @keyframes preloader-bounce {
+
+    0%{
+        opacity: 0;
+    }
+    
+    50%{
+        opacity: 1;
+    }
+    }
+
+    .loaded_hiding .preloader {
+    transition-delay: 1s;
+    transition: 0.3s opacity;
+    opacity: 0;
+    }
+    
+    .loaded .preloader {
+    transition-delay: 2s;
+    display: none;
+    }
+

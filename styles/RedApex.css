@@ -1,0 +1,35 @@
+body {
+    background-color: rgb(210, 246, 254);
+}
+.imagery {
+    position: absolute;
+    top: 5vh;
+    left: 15vh;
+    height: 90vh;
+}
+.info {
+    position: absolute;
+    top: 5vh;
+    left: 87vh;
+    height: 90vh;
+}
+.back {
+    position: absolute;
+    top: 92vh;
+    left: 13vh;
+    padding: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(35, 35, 35);
+    font-size: 30pt;
+    z-index: 100;
+}
+.back:visited {
+    position: absolute;
+    top: 190vw;
+    left: 13vw;
+    padding: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    direction: none;
+    color: rgb(35, 35, 35);
+    font-size: 30pt;
+}
