@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(13, 21, 23);
+    background-color: rgb(80, 80, 80);
 }
 .cv {
     position: absolute;
@@ -8,6 +8,42 @@ body {
     height: 90vh;
     padding-bottom: 10vh;
 }
+
+.pdf{
+    position: absolute;
+    top: 0vw;
+    left: 0vw;
+    height: 90vh;
+    padding-bottom: 10vh;
+}
+.links{
+    position: relative;
+    top: 79.6vh;
+    left: 28vh;
+    width: 20vh;
+    height: 10vh;
+}
+
+.links a{
+text-decoration: none;
+}
+.links img{
+    position: relative;
+    top: 0vh;
+    left: 0vh;
+    height: 5vh;
+    text-decoration: none;
+    transition: top 0.2s;
+}
+    .links img:hover{
+        position: relative;
+        top: -0.5vh;
+        left: 0vh;
+        height: 5vh;
+        text-decoration: none;
+    }
+
+
 .back {
     position: absolute;
     top: 92.5vh;

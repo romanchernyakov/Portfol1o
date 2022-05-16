@@ -22,7 +22,7 @@ body {
     flex-direction: row;
     transform: rotate(90deg) translateY(-100vh);
     transform-origin: top left;
-    width: 400vw;
+    width: 220vw;
 }
 
 .wrapper.bg img{
@@ -48,36 +48,45 @@ body {
 
 .ExitButtonOn {
     position: absolute;
-    height: 14.4vh;
-    top: 1.9vh;
-    left: 278.9vh;
+    height: 12vh;
+    top: 2.9vh;
+    left: 270.2vh;
     z-index: 3;
     opacity: 10%;
-    transition: 0.2s;
+    transition: opacity 0.2s;
 }
-    .ExitButtonOn:hover {
+    .exitAbout:hover .ExitButtonOn {
         position: absolute;
-        height: 14.4vh;
-        top: 1.9vh;
-        left: 278.9vh;
+        height: 12vh;
+        top: 2.9vh;
+        left: 270.2vh;
         z-index: 3;
         opacity: 100%;
     }
-.exitDoor {
+.exitDoor{
     position: absolute;
     height: 100vh;
     top: 0px;
-    left: 326.9vh;
+    left: 305.8vh;
     z-index: 4;
     opacity: 10%;
-    transition: 0.2s;
+    transition: opacity 0.2s;
 }
     .exitDoor:hover {
         position: absolute;
         height: 100vh;
         top: 0px;
-        left: 326.9vh;
+        left: 305.8vh;
         z-index: 4;
+        opacity: 100%;
+    }
+
+    .exitDoor:hover > .ExitButtonOn img{
+        position: absolute;
+        height: 12vh;
+        top: 2.9vh;
+        left: 270.2vh;
+        z-index: 3;
         opacity: 100%;
     }
     
@@ -88,7 +97,7 @@ body {
     left: 50vh;
     width: 69vh;
     height: 46vh; 
-    opacity: 1;
+    opacity: 0.6;
     transition: 0.2s;
 }
     .cvBox:hover {
@@ -101,9 +110,9 @@ body {
     }
 .cvLink{
     position: absolute;
-    bottom: -9.7vh;
-    left: -2vh;
-    height: 59.1vh;
+    bottom: -9.3vh;
+    left: -2.1vh;
+    height: 58.7vh;
 }
 
 .gradient {

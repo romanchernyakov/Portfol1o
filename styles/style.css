@@ -4,6 +4,7 @@
 	}
 body {
     background-color: rgb(89, 135, 173);
+    overflow: hidden;
 }
 .bg img{
     position: absolute;
@@ -19,7 +20,7 @@ body {
     height: 100%;
     left: 354.5vh;
 }
-.projects img{
+.titleProjects{
     position: absolute;
     width: 61.6vh;
     top: 40.63vh;
@@ -27,7 +28,7 @@ body {
     opacity:0%;
     transition: 0.2s;
 }
-    .projects img:hover {
+    .projects :hover .titleProjects{
         position: absolute;
         width: 61.6vh;
         top: 40.63vh;
@@ -35,7 +36,25 @@ body {
         opacity: 100%;
     }
 
-.aboutMe img{
+.doorProjects{
+    position: absolute;
+    bottom: 12.5vh;
+    left: 141.9vh;
+    z-index: 20;
+    height: 32.8vh;
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+    .doorProjects:hover {
+        position: absolute;
+        bottom: 12.5vh;
+        left: 141.9vh;
+        z-index: 20;
+        height: 32.8vh;
+        opacity: 1;
+    }
+
+.titleAbout{
     position: absolute;
     width: 19.8vh;
     top: 46.8vh;
@@ -43,13 +62,31 @@ body {
     opacity:0%;
     transition: 0.2s;
 }
-    .aboutMe img:hover {
+    .aboutMe :hover .titleAbout{
         position: absolute;
         width: 19.8vh;
         top: 46.8vh;
         left: 40.6vh;
         opacity: 100%;
     }
+.doorAbout{
+    position: absolute;
+    bottom: 12.5vh;
+    left: 78.6vh;
+    z-index: 20;
+    height: 32.8vh;
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+    .doorAbout:hover {
+        position: absolute;
+        bottom: 12.5vh;
+        left: 78.6vh;
+        z-index: 20;
+        height: 32.8vh;
+        opacity: 1;
+    }
+
 .red img{
     position: absolute;
     width: 14.2vh;
@@ -65,7 +102,23 @@ body {
         left: 126vh;
         opacity: 100%;
     }
-
+.banner img{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 20;
+    height: 38.9vh;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+    .banner img:hover{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: 20;
+        height: 38.9vh;
+        opacity: 1;
+    }
 
 .preloader {
     /*фиксированное позиционирование*/
