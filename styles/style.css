@@ -90,16 +90,16 @@ body {
 .red img{
     position: absolute;
     width: 14.2vh;
-    top: 55.4vh;
-    left: 126vh;
+    top: 55.3vh;
+    left: 125.9vh;
     opacity: 0%;
     transition: 0.2s;
 }
     .red img:hover {
         position: absolute;
         width: 14.2vh;
-        top: 55.4vh;
-        left: 126vh;
+        top: 55.3vh;
+        left: 125.9vh;
         opacity: 100%;
     }
 .banner img{

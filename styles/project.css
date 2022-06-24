@@ -43,16 +43,22 @@ overflow-x: hidden;
     left: 312.1vh;
     height: 100vh;
 }
-.DBM {
+.PH {
     position: absolute;
     top: 0px;
     left: 510vh;
     height: 100vh;
 }
+.DBM {
+    position: absolute;
+    top: 0px;
+    left: 674vh;
+    height: 100vh;
+}
 .shok {
     position: absolute;
     top: 0px;
-    left: 677.3vh;
+    left: 841.3vh;
     height: 100vh;
 }
 
@@ -64,7 +70,7 @@ overflow-x: hidden;
 
 .publicationBox {
     position: absolute;
-    top: 94.8vh;
+    top: 94.6vh;
     left: 249.6vh;
 
 }
@@ -106,10 +112,31 @@ overflow-x: hidden;
     height: 67.6vh;
     opacity:0%;
     }
+.PHBox {
+    position: absolute;
+    top: 21.2vh;
+    left: 526.2vh;
+    height: 69vh;
+}
+.PHOff {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 66.8vh;
+    opacity:60%;
+    transition: opacity 0.3s;
+}
+    .PHOff:hover {
+        position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 66.8vh;
+    opacity:0%;
+    }
 .DBMTSCBox {
     position: absolute;
     top: 21.6vh;
-    left: 534.4vh;
+    left: 698.4vh;
     height: 69vh;
 }
 .DBMTSCOff {
@@ -154,7 +181,7 @@ overflow-x: hidden;
 .shokBox {
     position: absolute;
     top: 20.2vh;
-    left: 692.7vh;
+    left: 856.7vh;
     height: 69vh;
 }
 .shokCOff {
@@ -178,21 +205,21 @@ overflow-x: hidden;
 .doorClosed{
     position: absolute;
     top: 0px;
-    left: 884vh;
+    left: 1048vh;
     height: 100vh;
 }
 
 .doorOpen {
     position: absolute;
     top: 0px;
-    left: 884vh;
+    left: 1048vh;
     height: 100vh;
     opacity: 0;
 }
     .doorOpen:hover  {
         position: absolute;
         top: 0px;
-        left: 884vh;
+        left: 1084vh;
         height: 100vh;
         opacity: 1;
         transition-delay: 100ms;
@@ -201,7 +228,7 @@ overflow-x: hidden;
 .doorOpened {
     position: absolute;
     top: 0px;
-    left: 884vh;
+    left: 1048vh;
     height: 100vh;
     opacity: 0;
 }
@@ -209,7 +236,7 @@ overflow-x: hidden;
     .doorOpened:hover  {
         position: absolute;
         top: 0px;
-        left: 884vh;
+        left: 1048vh;
         height: 100vh;
         opacity: 1;
         transition-delay: 50ms;
@@ -221,7 +248,7 @@ overflow-x: hidden;
     position: absolute;
     height: 7.8vh;
     top: 2.2vh;
-    left: 861.6vh;
+    left: 1025.6vh;
     z-index: 30;
     opacity: 0%;
     transition: 0.2s;
@@ -231,7 +258,7 @@ overflow-x: hidden;
         position: absolute;
         height: 7.8vh;
         top: 2.2vh;
-        left: 861.6vh;
+        left: 1025.6vh;
         z-index: 30;
         opacity: 50%;
     }
